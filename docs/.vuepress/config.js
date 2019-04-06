@@ -29,7 +29,8 @@ const sidebar = {
       collapsable: false,
       children: [
         'createTriangle/',
-        'sector/'
+        'sector/',
+        'aBlock/lessBlock'
       ],
     },
     {
