@@ -19,7 +19,7 @@ const nav = [
   },
   {
     text: '文章',
-    link: '/articles/'
+    link: '/articles/books/'
   }
 ]
 const sidebar = {
@@ -154,11 +154,28 @@ const sidebar = {
         'block/README2'
       ]
     },
+  ],
+  '/articles/': [
+    {
+      title: '技巧总结',
+      collapsable: false,
+      children: [
+        'skill/skill'
+      ]
+    },
+    {
+      title: '书籍记录',
+      collapsable: false,
+      children: [
+        'books/'
+      ]
+    },
   ]
 }
 
 var config = {
   title: 'Umeus Blog',
+  port: 8090,
   description: '前端踩坑之路，学习各路大神，走出属于自己的路!',
   dest: './dist', // 设置输出目录
   base: '/', // /UmeusYoung/vuepressBlog/ 执行run build命令的路径
